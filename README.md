@@ -1,6 +1,6 @@
 # Colorimeter Project
 
-This repository contains the source code, documentation, and schematics for a IOT - Enabled Colorimeter, a device used to measure the concentration of colored compounds in solutions by analyzing their absorbance. This project is ideal for scientific applications, educational purposes, and DIY experiments.
+This repository contains the source code, documentation, and schematics for a IOT - Enabled Colorimeter, a device used to measure the concentration of colored compounds in solutions by analyzing their absorbance based on different wavelengths. This project is ideal for scientific applications, educational purposes, and DIY experiments.
 
 ## Table of Contents
 
@@ -11,12 +11,12 @@ This repository contains the source code, documentation, and schematics for a IO
 - [Software](#software)
 - [Setup & Usage](#setup--usage)
 - [Applications](#applications)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
-A colorimeter measures the absorbance of specific wavelengths of light by a sample to determine the concentration of compounds in a solution. This project provides a simple yet effective way to analyze the properties of various substances through light analysis.
+A colorimeter is a laboratory device used to measure the absorbance of light at specific wavelengths in a given solution. Colorimetry is based on Beer-Lambert’s law, which states that the amount of light absorbed by a colored solution is directly proportional to the solution’s concentration and the length of the light path through it. When light passes through a sample solution, part of it is absorbed, while the remaining light is transmitted. By comparing the color intensity of a solute in the sample solution to that of a reference solution with a known solute concentration, we can estimate the concentration of the colored solute in the sample. Colorimeters are commonly used in fields such as water analysis, environmental analysis, and laboratory research.
+
+Colorimeters, if accessible to households, could be used for practical applications like food quality control, water testing, and gardening. For instance, they could help ensure the freshness of fruits based on their color, test the purity of tap water, or analyze soil nutrients for home gardening. These applications could contribute to health, food safety, and environmental conservation efforts at a personal level.
 
 ## Features
 
@@ -32,32 +32,28 @@ A colorimeter measures the absorbance of specific wavelengths of light by a samp
 - **Arduino UNO**: For processing the signals.
 - **I2C LCD Display Module**: Shows the measured values and calibration data.
 - **Cuvette Holder**: Holds the sample for measurement.
+- **Push Buttons**: For user Interaction
 
 ## Circuit Design
 
-The circuit uses an LED light source directed toward a cuvette containing the sample solution. A photodiode opposite the light source detects the light that passes through the solution. The microcontroller calculates absorbance based on the intensity of the transmitted light.
+The circuit uses an RGB-LED light source directed toward a cuvette containing the sample solution. A LDR Sensor opposite to the light source detects the light that passes through the solution. The microcontroller calculates absorbance based on the intensity of the transmitted light.
 
 <!-- You can add an image here if you have a circuit diagram. -->
 
-## Software
+##Applications:
 
-The software for this project is written in C++ (Arduino IDE). It performs the following tasks:
+Colorimeters are widely used in various fields for accurate color measurement and analysis. Here are some key applications:
 
-1. Controls the LED light source.
-2. Reads the photodiode output and calculates the absorbance.
-3. Displays data and calibration information on an LCD.
+**1. Chemical Analysis**: Used in labs to determine the concentration of substances in solutions by measuring absorbance and transmittance.
 
-## Setup & Usage
+**2. Food and Beverage**: Ensures consistent color in products like juices, sauces, and beverages, which is essential for quality control.
 
-1. **Hardware Setup**: Assemble the circuit according to the provided schematics.
-2. **Upload Code**: Upload the Arduino code provided in the `src` folder to the microcontroller.
-3. **Calibration**: Place a reference sample in the cuvette holder, and use the calibration function to set the baseline absorbance.
-4. **Measurements**: Insert test samples and observe the absorbance values displayed on the screen.
+**3. Environmental Testing**: Helps monitor pollutants in water by measuring color changes in samples, indicating the presence of contaminants.
 
-## Applications
+**4. Medical Diagnostics**: Used in clinical tests to analyze blood or urine samples for chemical concentrations.
 
-This colorimeter can be used for:
+**5. Textile and Paint Industries**: Ensures uniformity in color shades and batches, critical for maintaining brand consistency and quality.
 
-- Chemical analysis in laboratories and educational settings.
-- Concentration measurement of solutions.
-- Experiments in photometry and colorimetry.
+**6. Agriculture**: Analyzes soil samples and crop health based on color variation to determine nutrient deficiencies.
+
+Colorimeters provide reliable color quantification, making them invaluable across scientific, industrial, and quality-control applications.
