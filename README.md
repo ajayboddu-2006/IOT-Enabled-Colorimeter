@@ -8,8 +8,6 @@ This repository contains the source code, documentation, and schematics for a IO
 - [Features](#features)
 - [Components](#components)
 - [Circuit Design](#circuit-design)
-- [Software](#software)
-- [Setup & Usage](#setup--usage)
 - [Applications](#applications)
 
 ## Overview
@@ -40,7 +38,7 @@ The circuit uses an RGB-LED light source directed toward a cuvette containing th
 
 <!-- You can add an image here if you have a circuit diagram. -->
 
-##Applications:
+## Applications:
 
 Colorimeters are widely used in various fields for accurate color measurement and analysis. Here are some key applications:
 
