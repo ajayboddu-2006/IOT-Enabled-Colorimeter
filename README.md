@@ -1,4 +1,4 @@
-# Colorimeter Project
+# IOT-Enabled Colorimeter
 
 This repository contains the source code, documentation, and schematics for a IOT - Enabled Colorimeter, a device used to measure the concentration of colored compounds in solutions by analyzing their absorbance based on different wavelengths. This project is ideal for scientific applications, educational purposes, and DIY experiments.
 
