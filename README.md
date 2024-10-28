@@ -31,10 +31,12 @@ Colorimeters, if accessible to households, could be used for practical applicati
 - **I2C LCD Display Module**: Shows the measured values and calibration data.
 - **Cuvette Holder**: Holds the sample for measurement.
 - **Push Buttons**: For user Interaction
+- **Potentiometer**: For generating different wavelengths of light.
+  
 
 ## Circuit Design
 
-The circuit uses an RGB-LED light source directed toward a cuvette containing the sample solution. A LDR Sensor opposite to the light source detects the light that passes through the solution. The microcontroller calculates absorbance based on the intensity of the transmitted light.
+The circuit uses an RGB-LED light source directed toward a cuvette through the convex lens and slit, containing the sample solution. The RGB led is used to generate different wavelengths of Light source controlled using Potentiometer. The different wavelengths of light source are incident on the cuvette. The solution absorbs some of the wavelegths based on its characteristics. And the remaining light is transmitted through the solution and is detected by LDR sensor. Based on the Beer Lambert's Law, the microcontroller computes the absorbance and the concentration of the solution. And the wavelength, Absorbance and Concentration are displayed on the I2C LCD Display for visualization. There are are three Push buttons for User interaction, for the functionalities to perform Zero Analysis of Standard Solution, Calibration and Reset respectively. This IOT-Enabled Colorimeter is used to analyze the Concentration and Absorbance of the solution based on the Beer-Lambert's Law, with extended Accuracy by enabling Calibration. It is used to perform Food Quality Analysis, Environmenta Analysis and Water Quality Analysis. 
 
 <!-- You can add an image here if you have a circuit diagram. -->
 
