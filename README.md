@@ -16,6 +16,8 @@ A colorimeter is a laboratory device used to measure the absorbance of light at 
 
 Colorimeters, if accessible to households, could be used for practical applications like food quality control, water testing, and gardening. For instance, they could help ensure the freshness of fruits based on their color, test the purity of tap water, or analyze soil nutrients for home gardening. These applications could contribute to health, food safety, and environmental conservation efforts at a personal level.
 
+![Colorimeter](IOT-Enabled-Colorimeter/image.jpg)
+
 ## Features
 
 - **Wavelength Selection**: Choose from multiple wavelengths for diverse compound analysis.
