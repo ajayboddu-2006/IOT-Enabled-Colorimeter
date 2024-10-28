@@ -45,18 +45,16 @@ void setup() {
     pinMode(potentiometerPin, INPUT);
     pinMode(LDRPin, INPUT);
     pinMode(reset, INPUT_PULLUP); // Enable internal pull-up resistor for the reset button
-	pinMode(zero_analysis_button,INPUT_PULLUP);
-  	pinMode(target_analysis_button, INPUT_PULLUP);
+    pinMode(zero_analysis_button,INPUT_PULLUP);
+    pinMode(target_analysis_button, INPUT_PULLUP);
     // Initial display setup for first LCD
     lcd1.setCursor(0, 0);
     lcd1.print("Wavelength: ");
-
     // Initial display setup for second LCD
     lcd2.setCursor(0, 0);
     lcd2.print("Absorbance: ");
     lcd2.setCursor(0, 1);
     lcd2.print("Conc: "); // Placeholder for concentration
-
     // Initialize Serial Monitor
     Serial.begin(9600);
 }
@@ -67,7 +65,7 @@ void loop() {
         zeroabsorbance = 0; // Reset Zero Analysis absorbance
         zeroconcentration = 0; // Reset Zero Analysis concentration
         targetabsorbance = 0; //Reset Target Solution Absorbance
-		    targetconcentration = 0;  //Reset Target Solution Concentration
+        targetconcentration = 0;  //Reset Target Solution Concentration
         //Clear the LCDs
         lcd1.setCursor(0, 0);
         lcd1.print("Wavelength:       "); 
@@ -81,13 +79,13 @@ void loop() {
       	delay(500);
       	Serial.println("Reset State");
       	is_zero_Measuring = false;
-    	  is_target_Measuring = false;
+        is_target_Measuring = false;
     }
-  	if(digitalRead(zero_analysis_button) == LOW){
+    if(digitalRead(zero_analysis_button) == LOW){
         is_zero_Measuring = true;
         delay(200);
     }
- 	  if(is_zero_Measuring){
+    if(is_zero_Measuring){
         generateWavelength(); // Gnerates Wavelength based on the readings of Potentiometr
         int ldrValue = analogRead(LDRPin); // Read LDR
         float voltage = ldrValue * (5.0 / 676.0); // Convert LDR value to voltage
@@ -112,7 +110,7 @@ void loop() {
         is_target_Measuring = true;
         delay(200);
     }
- 	if(is_target_Measuring){
+    if(is_target_Measuring){
       	// Read the potentiometer value
         generateWavelength();
         // Read LDR value
@@ -139,7 +137,7 @@ void loop() {
         Serial.print(calibrated_concentration, 2);
         Serial.println(" mg/L");
         delay(500); // Small delay for readability
- 	}
+    }
 }
 
 void generateWavelength(){
