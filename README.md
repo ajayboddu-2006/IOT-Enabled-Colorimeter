@@ -42,6 +42,10 @@ The circuit uses an RGB-LED light source directed toward a cuvette through the c
 
 ![Circuit_Colorimeter](./Circuit.jpg)
 
+Below is the image of the setup of the Colorimeter:
+
+![Colorimeter_image](./colorimeter_image.jpg)
+
 ## Applications:
 
 Colorimeters are widely used in various fields for accurate color measurement and analysis. Here are some key applications:
